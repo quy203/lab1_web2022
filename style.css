@@ -1,0 +1,164 @@
+/* 
+ Tiền tố:
+ d-*: display
+ bg-*: background
+ text-*: color hoặc align
+ m-*: margin
+ p-*: padding
+ d-*: display
+  ví dụ: 
+    + d-flex -> display: flex
+    + d-grid -> display: grid
+ content-*: justify-content
+ align-*: align-items
+ 
+*/
+:root {
+  --primary: rgb(30,36,64);
+  --secondary: rgb(202,120,2);
+  --thirdary: gray;
+}
+
+.container {
+  max-width: 980px;
+}
+/* =========== Background color =========== */
+.bg-orange {
+  background: var(--secondary);
+}
+.bg-blue {
+  background: var(--primary);
+} 
+/* ===========  Text color ===========  */
+.text-orange {
+  color: var(--secondary);
+}
+.text-blue{
+  color: var(--primary);
+}
+.text-white {
+  color: #fff;
+}
+.text-black {
+  color: #000;
+}
+/* ===========  Alignment ===========  */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+/* ===========  Margin ===========  */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-0 {
+  margin: 0;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mt-2{
+  margin-top: 8px;
+}
+.mt-3{
+  margin-top: 12px;
+}
+.ml-2{
+  margin-left: 8px;
+}
+/* ===========  Padding ===========  */
+.p-0 {
+  padding: 0;
+}
+.p-1 {
+  padding: 4px;
+}
+.p-2 {
+  padding: 8px;
+}
+.p-4 {
+  padding: 16px;
+}
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.px-7{
+  padding-left: 28px;
+  padding-right: 28px;
+}
+/* ===========  Width ===========  */
+.max-w-full {
+  max-width: 100%;
+}
+.max-width{
+  width: 100%;
+}
+.width-5{
+  width: 20%;
+}
+.width-20{
+  width: 80%;
+}
+/* ===========  Display ===========  */
+.flex {
+  display: flex;
+}
+.block{
+  display: block;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-cols-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gap-8 {
+  grid-gap: 32px;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.list-unstyled {
+  list-style: none;
+}
+.no-underline {
+  text-decoration: none;
+}
+.border {
+  border: 1px solid #ccc;
+}
+.boder-white{
+  border: 1px solid white;
+}
+/* ========== Hover ========== */
+.hover\:border-red:hover {
+  border-color: red;
+}
+.hover\:bg-blue:hover {
+  background: var(--primary);
+}
+.hover\:text-underline:hover{
+  text-decoration: underline;
+}
